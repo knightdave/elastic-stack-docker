@@ -138,7 +138,7 @@ services:
     container_name: redis-cli
     networks: ['stack']
     depends_on: ['elasticsearch','redis']
-    command: redis-cli -h redis-server
+    command: redis-cli -h redis
 
 networks: {stack: {}}
 # use docker volume to persist ES data outside of a container.
